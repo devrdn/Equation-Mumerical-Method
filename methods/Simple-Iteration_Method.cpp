@@ -8,7 +8,7 @@
 * eps - точность
 */
 
-double simple_itteration(double a, double b, double sup, double inf, double eps) {
+double simple_itteration(double a, double b, double inf, double sup, double eps) {
    
     printf(" - Simple Method: \n");
 

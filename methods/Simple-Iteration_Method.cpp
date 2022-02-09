@@ -4,18 +4,18 @@
 * Метод простых иттераций.
 * a - начало отрезка.
 * b - конец отрезка
-* inf, sup - инфимум и супремум модуля первой производной значения на отрезке [a,b].
+* sup_g - инфимум и супремум модуля первой производной функции f значения на отрезке [a,b].
 * eps - точность
 */
 
-double simple_itteration(double a, double b, double inf, double sup, double eps) {
+double simple_itteration(double a, double b, double sup_g, double eps) {
    
     printf(" - Simple Method: \n");
 
     /* Инициализация переменных */
     double xi = g(-1); // Начальное значение.
     double xn; // Старое значение 
-    double q = 0.3704;
+    double q =  sup_g;
     int n = 0;
 
     /* Вывод начальных значений */

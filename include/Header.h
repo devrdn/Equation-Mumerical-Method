@@ -35,7 +35,7 @@ double bisection_method(double a, double b, double eps);
 * Метод хорд.
 * a - начало отрезка.
 * b - конец отрезка.
-* inf, sup - инфимум и супремум модуля первой производной значения на отрезке [a,b].
+* inf, sup - инфимум и супремум модуля первой производной функции f значения на отрезке [a,b].
 * eps - точность.
 */
 double secant_method(double a, double b, double inf, double sup, double eps);
@@ -44,8 +44,8 @@ double secant_method(double a, double b, double inf, double sup, double eps);
 * Метод ньютона.
 * a - начало отрезка.
 * b - конец отрезка.
-* inf - инфимум модуля первой производной на отрезке [a,b].
-* sup - супремум модуля второй производной на отрезке [a,b].
+* inf - инфимум модуля первой производной функции f на отрезке [a,b].
+* sup - супремум модуля второй производной функции f на отрезке [a,b].
 * eps - точность.
 */
 double newton_method(double a, double b, double inf, double sup, double eps);
@@ -54,7 +54,7 @@ double newton_method(double a, double b, double inf, double sup, double eps);
 * Метод простых иттераций.
 * a - начало отрезка.
 * b - конец отрезка
-* inf, sup - инфимум и супремум модуля первой производной значения на отрезке [a,b].
+* sup_g - супремум модуля первой производной функции g значения на отрезке [a,b].
 * eps - точность
 */
-double simple_itteration(double a, double b, double inf, double sup, double eps);
+double simple_itteration(double a, double b, double sup_g, double eps);

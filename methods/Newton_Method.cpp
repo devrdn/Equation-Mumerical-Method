@@ -1,7 +1,7 @@
 #include "../include/Header.h"
 
 /*
-* Метод ньютона.
+* ћетод ньютона.
 * a - начало отрезка.
 * b - конец отрезка.
 * inf - инфимум первой производной на отрезке [a,b].
@@ -13,7 +13,7 @@ double newton_method(double a, double b, double inf, double sup, double eps) {
    
     printf(" - Newton Method: \n");
 
-    /* Инициализаци€ переменных */
+    /* »нициализаци€ переменных */
     double xi; // Ќовое значение xi (x[i+1])
     double xn; // —тарое значени€ (x[i]).
     int n = 0;
@@ -26,7 +26,7 @@ double newton_method(double a, double b, double inf, double sup, double eps) {
         xi = a;
     }
 
-    /* Поиск приближенного значени€ корн€ с точностью eps  */
+    /* ѕоиск приближенного значени€ корн€ с точностью eps  */
     do {
         n++;
         xn = xi;
@@ -34,6 +34,6 @@ double newton_method(double a, double b, double inf, double sup, double eps) {
         printf("I = %2i | xi = %6.6f | f(xi) = %9.6f | Kr. = %10.6f\n", n, xi, f(xi), sup * (xi - xn) / 2 * inf);
     } while (!(sup * abs(xi - xn) / (2 * inf) < eps));
 
-    /* Возвращаем приближенное значение */
+    /* ¬озвращаем приближенное значение */
     return xi;
 }

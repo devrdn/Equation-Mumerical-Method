@@ -9,7 +9,10 @@
 */
 
 double secant_method(double a, double b, double inf, double sup, double eps) {
+    
     printf(" - Secant Method: \n");
+
+    /* Инициализация переменных */
     double e;
     double xi; // Новое значение xi (x[i+1])
     double xn; // Старое значения (x[i]).

@@ -8,19 +8,24 @@
 */
 
 double bisection_method(double a, double b, double eps) {
+   
     printf(" - Bisection Method: \n");
+    
+    /* »нициализаци€ переменных */
     double c = 0.0;
     int n = 0;
+
     /* ѕоиск приближенного значени€ корн€ с точностью eps */
     do {
         n++;
         c = (a + b) / 2.0; // ƒелим отрезом на два.
         if (f(c) == 0)  break; // ѕровер€ем, если мы не нашли корень.
-        /* ѕровер€ем, в какой части отрезка находиитс€ корень.*/
-        else if (f(c) * f(a) > 0) a = c;
+        else if (f(c) * f(a) > 0) a = c; // ѕровер€ем, в какой части отрезка находиитс€ корень.
         else b = c;
         printf("I = %2i | c = %6.6f | f(c) = %9.6f | Kr. = %10.6f\n", n, c, f(c), fabs(b - a));
     } while (!(fabs(b - a) < eps));
+
+    /* ¬озвращаем приближенное значение */
     return c;
 }
 

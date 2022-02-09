@@ -9,6 +9,7 @@
 */
 
 double simple_itteration(double a, double b, double sup, double inf, double eps) {
+   
     printf(" - Simple Method: \n");
 
     /* Инициализация переменных */
@@ -18,7 +19,7 @@ double simple_itteration(double a, double b, double sup, double inf, double eps)
     int n = 0;
 
     /* Вывод начальных значений */
-    cout << "q = " << q << endl << "xi = " << xi << endl;
+    cout << endl << "[ - ] q = " << q << endl << "[ - ] Start Value = " << xi << endl << endl;
 
     /* Поиск приближенного значения корня с точностью eps  */
     do {

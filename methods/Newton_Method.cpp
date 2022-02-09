@@ -10,7 +10,10 @@
 */
 
 double newton_method(double a, double b, double inf, double sup, double eps) {
+   
     printf(" - Newton Method: \n");
+
+    /* Инициализация переменных */
     double xi; // Новое значение xi (x[i+1])
     double xn; // Старое значения (x[i]).
     int n = 0;

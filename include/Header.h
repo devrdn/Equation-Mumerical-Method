@@ -23,7 +23,6 @@ double mf(double x);
 /* Функция g(x) для метода простых иттераций */
 double g(double x); 
 
-
 /*
 * Метод Бисекции(метод половинного деления).
 * a - начало отрезка.
@@ -31,7 +30,6 @@ double g(double x);
 * eps - корень.
 */
 double bisection_method(double a, double b, double eps);
-
 
 /* 
 * Метод хорд.
@@ -41,7 +39,6 @@ double bisection_method(double a, double b, double eps);
 * eps - точность.
 */
 double secant_method(double a, double b, double inf, double sup, double eps);
-
 
 /*
 * Метод ньютона.
